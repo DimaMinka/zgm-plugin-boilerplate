@@ -2,7 +2,7 @@
 /**
  * @package  ZGM
  */
-namespace ZGM\Frontend;
+namespace ZGM\ZGMPB\Frontend;
 
 class Frontend
 {

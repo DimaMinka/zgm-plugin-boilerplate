@@ -2,7 +2,7 @@
 /**
  * @package  ZGM
  */
-namespace ZGM\Frontend\Callbacks;
+namespace ZGM\ZGMPB\Frontend\Callbacks;
 
 class FrontendCallbacks
 {

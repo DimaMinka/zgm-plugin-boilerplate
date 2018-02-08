@@ -2,7 +2,7 @@
 /**
  * @package  ZGM
  */
-namespace ZGM\Admin\Callbacks;
+namespace ZGM\ZGMPB\Admin\Callbacks;
 
 class AdminCallbacks
 {

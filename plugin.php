@@ -3,10 +3,6 @@
 /**
  * The plugin bootstrap file
  *
- * This file is read by WordPress to generate the plugin information in the plugin
- * Dashboard. This file also includes all of the dependencies used by the plugin,
- * registers the activation and deactivation functions, and defines a function
- * that starts the plugin.
  *
  * @link              https://zerogravitymarketing.com
  * @since             1.0.0
@@ -30,11 +26,6 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-/**
- * Currently plugin version.
- * Start at version 1.0.0 and use SemVer - https://semver.org
- */
-
 
 // Require once the Composer Autoload
 if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
@@ -46,7 +37,7 @@ if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
  */
 register_activation_hook( __FILE__, function() {
 
-	ZGM\Activate::activate();
+	ZGM\ZGMPB\Activate::activate();
 	
 } );
 
@@ -55,14 +46,14 @@ register_activation_hook( __FILE__, function() {
  */
 register_deactivation_hook( __FILE__, function() {
 
-	ZGM\Deactivate::deactivate();
+	ZGM\ZGMPB\Deactivate::deactivate();
 
 } );
 
 /**
  * Initialize all the core classes of the plugin
  */
-if ( class_exists( 'ZGM\\Init' ) ) {
-	$Init = new ZGM\Init();
+if ( class_exists( 'ZGM\\ZGMPB\\Init' ) ) {
+	$Init = new ZGM\ZGMPB\Init();
 	$Init->run();
 }

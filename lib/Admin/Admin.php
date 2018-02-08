@@ -2,9 +2,9 @@
 /**
  * @package  ZGM
  */
-namespace ZGM\Admin;
+namespace ZGM\ZGMPB\Admin;
 
-use ZGM\Admin\Callbacks\AdminCallbacks;
+use ZGM\ZGMPB\Admin\Callbacks\AdminCallbacks;
 
 class Admin
 {

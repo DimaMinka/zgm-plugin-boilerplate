@@ -4,7 +4,7 @@
  *
  * @package  ZGM
  */
-namespace ZGM;
+namespace ZGM\ZGMPB;
 
 class Deactivate
 {

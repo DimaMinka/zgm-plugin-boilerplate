@@ -7,7 +7,7 @@
  *
  * @package  ZGM
  */
-namespace ZGM;
+namespace ZGM\ZGMPB;
 
 final class Init {
 
