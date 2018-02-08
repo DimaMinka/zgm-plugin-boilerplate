@@ -1,0 +1,17 @@
+{
+    "name": "zgm/zgm-plugin-boilerplate",
+    "description": "A custom wordpress plugin boilerplate",
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Zero Gravity Marketing",
+            "email": "tech@zerogravitymarketing.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"ZGM\\": "lib/"}
+    }
+}
