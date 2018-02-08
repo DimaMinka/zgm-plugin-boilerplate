@@ -34,10 +34,6 @@ if ( ! defined( 'WPINC' ) ) {
  * Currently plugin version.
  * Start at version 1.0.0 and use SemVer - https://semver.org
  */
-define( 'PLUGIN_VERSION', '1.0.0' );
-define( 'PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-define( 'PLUGIN_ROOT', plugin_dir_url( __FILE__ ) );
-define( 'PLUGIN_NAME', 'zgm-plugin-boilerplate' );
 
 
 // Require once the Composer Autoload

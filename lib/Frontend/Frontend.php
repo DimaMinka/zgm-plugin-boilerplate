@@ -30,7 +30,7 @@ class Frontend
 	public function enqueue_styles() 
 	{
 
-		wp_enqueue_style( $this->plugin_name, PLUGIN_ROOT . 'dist/main.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url(dirname(dirname(__FILE__))) . 'dist/main.css', array(), $this->version, 'all' );
 
 	}
 
@@ -38,7 +38,7 @@ class Frontend
 	{
 
 
-		wp_enqueue_script( $this->plugin_name, PLUGIN_ROOT . 'dist/main.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url(dirname(dirname(__FILE__))) . 'dist/main.js', array( 'jquery' ), $this->version, false );
 
 	}
 

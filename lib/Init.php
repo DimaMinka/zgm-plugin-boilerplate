@@ -50,12 +50,13 @@ final class Init {
 	 */
 	public function __construct() 
 	{
-		if ( defined( 'PLUGIN_VERSION' ) ) {
-			$this->version = PLUGIN_VERSION;
+		if ( defined( 'THIS_PLUGIN_VERSION' ) ) {
+			$this->version = THIS_PLUGIN_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}
-		$this->plugin_name = PLUGIN_NAME;
+
+		$this->plugin_name = 'zgm-plugin-boilerplate';
 
 		$this->loader = new Loader();
 

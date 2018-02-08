@@ -36,7 +36,7 @@ class Admin
 	public function enqueue_styles() 
 	{
 
-		wp_enqueue_style( $this->plugin_name, PLUGIN_ROOT . 'dist/admin.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url(dirname(dirname(__FILE__))) . 'dist/admin.css', array(), $this->version, 'all' );
 
 	}
 
@@ -48,7 +48,7 @@ class Admin
 	public function enqueue_scripts() 
 	{
 		
-		wp_enqueue_script( $this->plugin_name, PLUGIN_ROOT . 'dist/admin.js', array( 'jquery' ), $this->version, true );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url(dirname(dirname(__FILE__))) . 'dist/admin.js', array( 'jquery' ), $this->version, true );
 
 	}
 	
